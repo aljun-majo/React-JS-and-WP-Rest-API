@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import { Route, Switch, BrowserRouter } from "react-router-dom";
 import axios from 'axios';
-import Carousel from './Components/Carousel'
+import Carousel from './Components/Carousel';
+import Posts from './Components/Posts'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 
@@ -44,13 +45,13 @@ const Portfolio = () => (
     </div>
   </Container>
 )
-const Blog = () => (
-  <Container className='mt-5'>
-    <div className='text-center'>
-      <h2>Blog Page.</h2>
-    </div>
-  </Container>
-)
+// const Blog = () => (
+//   <Container className='mt-5'>
+//     <div className='text-center'>
+//       <h2>Blog Page.</h2>
+//     </div>
+//   </Container>
+// )
 const PageNotFound = ({location}) => (
      <div className="text-center mt-5">
            <h3>Oops! That page <code>{location.pathname}</code> can’t be found.</h3>
@@ -108,8 +109,8 @@ class App extends Component {
                     <NavLink href="/portfolio">Portfolio</NavLink>
                   </NavItem>
                   <NavItem>
-                    <NavLink href="/blog">Blog</NavLink>
-                  </NavItem>                
+                    <NavLink href="/news">News</NavLink>
+                  </NavItem>               
                   <UncontrolledDropdown nav inNavbar>
                     <DropdownToggle nav caret>
                       Options
@@ -138,11 +139,11 @@ class App extends Component {
               <Route exact path="/home" render={() => <Home carouselITems={this.state.carousel} />} />
               <Route exact path="/about"  component={About} />
               <Route exact path="/portfolio"  component={Portfolio} />
-              <Route exact path="/blog"  component={Blog} />
+              <Route path="/news" component={Posts} />
           
               <Route exact render={(props) => <PageNotFound {...props} />} />
            
-            </Switch>        
+            </Switch>    
 
         </div>
       </BrowserRouter>
