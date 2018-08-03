@@ -5,4 +5,4 @@
   - [create Carousel component and display carousel slider](https://gist.github.com/jun20/110e3d1e7aa67c5c330bc0effc9cb1dc)
 
 - Gist for Blog page with Rest API data from WP Site Blog Post Contents, Reactstrap
-  - gist link here
+  - [Blog Post Page layout](https://gist.github.com/jun20/9ba93dda94365a1f22232ea5e5173efd)
