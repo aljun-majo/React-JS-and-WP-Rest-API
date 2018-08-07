@@ -24,8 +24,10 @@ import {
 const Home = ({carouselITems}) => (    
   <div>
     <Carousel sliders={carouselITems} />
-    <Container className='text-center border border-primary bg-primary text-white my-5 py-5'>
+    <Container className='text-center border border-secodary bg-light my-5 py-5'>
       <h2>Home Page.</h2>
+      <p>Home content here...</p>
+      <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to</p>
     </Container>
   </div>
 )
