@@ -17,7 +17,7 @@ class Blog extends React.Component {
 
   componentDidMount() {
 
-  const wp_api_posts = ( 'http://thegoodartisan.localhost/wp-json/wp/v2/posts' );
+  const wp_api_posts = ( 'https://thegoodartisan.com/wp-json/wp/v2/posts' );
 
     return axios.get(wp_api_posts)
       .then(response => {
