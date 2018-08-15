@@ -1,4 +1,5 @@
-# React JS and WordPress REST API
+# React JS and WordPress REST API 
+### this is for my video series demo only not for production
 
 - Gist for Bootstrap 4 Carouse in React and WordPress REST API with Reactstrap, ACF custom fields, custom endpoint
   - [custom endpoint carousel to display ACF custom fields](https://gist.github.com/jun20/694d8b90d2ba4acd7983a9b2c91b5a2a)
